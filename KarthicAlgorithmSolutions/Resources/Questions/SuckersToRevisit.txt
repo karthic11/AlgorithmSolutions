@@ -1,0 +1,11 @@
+﻿
+
+
+1) Find the median of two sorted arrays of inequal length ---fucked my time
+2) Given an array which has a set of positive and negative numbers, print all the subset sum which is equal to 0. 
+3) Kth Smallest element on two sorted array
+http://leetcode.com/2011/01/find-k-th-smallest-element-in-union-of.html
+http://nriverwang.blogspot.com/2013/04/k-th-smallest-element-of-two-sorted.html
+http://stackoverflow.com/questions/13185508/find-the-kth-smallest-element
+
+4) Tech compan page1 ..construct tree with preorder..prob with pre order and in-order

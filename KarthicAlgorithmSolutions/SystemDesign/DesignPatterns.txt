@@ -1,0 +1,16 @@
+﻿
+Proxy Design Pattern
+
+http://www.dofactory.com/net/proxy-design-pattern
+
+Singleton Design Pattern
+
+http://www.dofactory.com/net/singleton-design-pattern#net
+
+Facade Design Pattern
+http://www.dofactory.com/net/facade-design-pattern
+
+Factory Design Patter
+
+http://www.dofactory.com/net/factory-method-design-pattern
+refer gayle book

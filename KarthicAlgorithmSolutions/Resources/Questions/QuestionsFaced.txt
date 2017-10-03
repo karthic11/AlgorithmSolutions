@@ -1,0 +1,19 @@
+﻿
+
+
+Google
+   Find the kth largest element in binary search tree 
+   Give a nested IEnumerable<IEnumerable<T>>, write a function which takes this and returns single IEnumerable<T>
+
+Yahoo
+  Given an preorder traversal array. Construct a binary tree from that array
+  Given two words find there are anagram of each other.
+  Given a dictionary, find all the valid word anagard of the given work in an efficent way   atr: rat, art (no tar)
+  Find the value of the given expresission 102 + 32 * 33 /2
+
+Amazon
+  Implement Binary tree search
+  Does Binary tree needs IBST?.  Why it need interface
+
+
+  http://programming4interviews.wordpress.com/2012/07/16/form-a-tree-from-given-child-parent-pairs/

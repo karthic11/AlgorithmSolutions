@@ -1,0 +1,737 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FBFBB4A2-6E1B-4F43-A980-29B25A4E76CE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Puzzles</RootNamespace>
+    <AssemblyName>Puzzles</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AmazonQuestion1Page1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AmazonQuestion1Page1.Designer.cs">
+      <DependentUpon>AmazonQuestion1Page1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ArrayAndString.P6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ArrayAndString.P6.Designer.cs">
+      <DependentUpon>ArrayAndString.P6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CandidateQuesPage1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CandidateQuesPage1.Designer.cs">
+      <DependentUpon>CandidateQuesPage1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CandidateQuestionsPage2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CandidateQuestionsPage2.Designer.cs">
+      <DependentUpon>CandidateQuestionsPage2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataStructures\Array\NQueenProblem.cs" />
+    <Compile Include="DataStructures\Custom\WorkBreak.cs" />
+    <Compile Include="DataStructures\MedianOfMedian.cs" />
+    <Compile Include="DataStructures\Other\PointIntersection.cs" />
+    <Compile Include="DataStructures\Other\SkylineProblem.cs" />
+    <Compile Include="DataStructures\Array\ArrayHelper.cs" />
+    <Compile Include="DataStructures\Array\DNFThreeWayPartitionSorting.cs" />
+    <Compile Include="DataStructures\Array\KarthicSuffixArray.cs" />
+    <Compile Include="DataStructures\Array\NumberToWords.cs" />
+    <Compile Include="DataStructures\Array\SubArraySum.cs" />
+    <Compile Include="DataStructures\Array\SuffixArray.cs" />
+    <Compile Include="DataStructures\Other\AlgorithmHelper.cs" />
+    <Compile Include="DataStructures\Other\AnagramComparator.cs" />
+    <Compile Include="DataStructures\Other\Rectangle.cs" />
+    <Compile Include="DataStructures\Other\Triangle.cs" />
+    <Compile Include="DataStructures\Custom\WordSegmentation.cs" />
+    <Compile Include="DataStructures\Games\GameOfLife.cs" />
+    <Compile Include="DataStructures\Games\GoGame.cs" />
+    <Compile Include="DataStructures\Graph\Person.cs" />
+    <Compile Include="DataStructures\Hashtable\KathicHashtable.cs" />
+    <Compile Include="DataStructures\LinkedList\KarthicLinkedListHelper.cs" />
+    <Compile Include="DataStructures\Queue\AnimalQueue.cs" />
+    <Compile Include="ArrayAndString.p1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ArrayAndString.p1.Designer.cs">
+      <DependentUpon>ArrayAndString.p1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ArrayAndStringP5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ArrayAndStringP5.Designer.cs">
+      <DependentUpon>ArrayAndStringP5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ArrayAndStringsP4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ArrayAndStringsP4.Designer.cs">
+      <DependentUpon>ArrayAndStringsP4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BinaryTees.Page2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BinaryTees.Page2.Designer.cs">
+      <DependentUpon>BinaryTees.Page2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataStructures\Tree\AVLTree\AVLTree.cs" />
+    <Compile Include="DataStructures\Tree\BinaryTreeHelper.cs" />
+    <Compile Include="BinaryTrees.Page1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BinaryTrees.Page1.Designer.cs">
+      <DependentUpon>BinaryTrees.Page1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BinaryTreesPage3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BinaryTreesPage3.Designer.cs">
+      <DependentUpon>BinaryTreesPage3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataStructures\Other\BitHelper.cs" />
+    <Compile Include="BitManipulation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BitManipulation.Designer.cs">
+      <DependentUpon>BitManipulation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BitManipulation1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BitManipulation1.Designer.cs">
+      <DependentUpon>BitManipulation1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataStructures\Queue\CircularBufferOrQueue\CircularBuffer.cs" />
+    <Compile Include="DataStructures\Heap\CustomHeap.cs" />
+    <Compile Include="DataStructures\Tree\BinaryTree\BinaryTreeToLinkedList.cs" />
+    <Compile Include="DataStructures\Tree\BST\BinarySearchTree.cs" />
+    <Compile Include="DataStructures\Tree\BTree\BTree.cs" />
+    <Compile Include="DataStructures\Tree\IntervalTree\IntervalTree.cs" />
+    <Compile Include="DataStructures\Tree\SegementationTree\SegementationTree.cs" />
+    <Compile Include="GL6ModerateProbPage1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GL6ModerateProbPage1.Designer.cs">
+      <DependentUpon>GL6ModerateProbPage1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlassdoorPage2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GlassdoorPage2.Designer.cs">
+      <DependentUpon>GlassdoorPage2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlassdoorPage3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GlassdoorPage3.Designer.cs">
+      <DependentUpon>GlassdoorPage3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GLHardProblems_Page1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GLHardProblems_Page1.Designer.cs">
+      <DependentUpon>GLHardProblems_Page1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GLHardProblems_Page2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GLHardProblems_Page2.Designer.cs">
+      <DependentUpon>GLHardProblems_Page2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GLModerateProblems_Page1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GLModerateProblems_Page1.Designer.cs">
+      <DependentUpon>GLModerateProblems_Page1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GLModerateProblems_Page2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GLModerateProblems_Page2.Designer.cs">
+      <DependentUpon>GLModerateProblems_Page2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GLModerateProblems_Page3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GLModerateProblems_Page3.Designer.cs">
+      <DependentUpon>GLModerateProblems_Page3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImplementationProblems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImplementationProblems.Designer.cs">
+      <DependentUpon>ImplementationProblems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LinkedListPage3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LinkedListPage3.Designer.cs">
+      <DependentUpon>LinkedListPage3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogicalProblems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogicalProblems.Designer.cs">
+      <DependentUpon>LogicalProblems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataStructures\Heap\Heap.cs" />
+    <Compile Include="Heap.P1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Heap.P1.Designer.cs">
+      <DependentUpon>Heap.P1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HeapPage2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeapPage2.Designer.cs">
+      <DependentUpon>HeapPage2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Index.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Index.Designer.cs">
+      <DependentUpon>Index.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ArrayAndString.p2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ArrayAndString.p2.Designer.cs">
+      <DependentUpon>ArrayAndString.p2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataStructures\Tree\BST\BST.cs" />
+    <Compile Include="DataStructures\Graph\Graph.cs" />
+    <Compile Include="ArrayAndStringP3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ArrayAndStringP3.Designer.cs">
+      <DependentUpon>ArrayAndStringP3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataStructures\Queue\CircularBufferOrQueue\KarthicCircularQueue.cs" />
+    <Compile Include="MDIParentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIParentForm.Designer.cs">
+      <DependentUpon>MDIParentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MicrosoftIQ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MicrosoftIQ.Designer.cs">
+      <DependentUpon>MicrosoftIQ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MicrosoftIQ2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MicrosoftIQ2.Designer.cs">
+      <DependentUpon>MicrosoftIQ2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataStructures\Tree\AryTree\n-AryTree.cs" />
+    <Compile Include="MicrosoftOTSPage1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MicrosoftOTSPage1.Designer.cs">
+      <DependentUpon>MicrosoftOTSPage1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MicrosoftOTSPage2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MicrosoftOTSPage2.Designer.cs">
+      <DependentUpon>MicrosoftOTSPage2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MicrosoftOTSPage3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MicrosoftOTSPage3.Designer.cs">
+      <DependentUpon>MicrosoftOTSPage3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NGU2017QuestionsPage1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NGU2017QuestionsPage1.Designer.cs">
+      <DependentUpon>NGU2017QuestionsPage1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ObjectOrientedDesign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ObjectOrientedDesign.Designer.cs">
+      <DependentUpon>ObjectOrientedDesign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ObjectOrientedModels\Cards\BlackJackHand.cs" />
+    <Compile Include="ObjectOrientedModels\Cards\BlackJackCard.cs" />
+    <Compile Include="ObjectOrientedModels\Cards\Card.cs" />
+    <Compile Include="ObjectOrientedModels\Cards\Hand.cs" />
+    <Compile Include="ObjectOrientedModels\Cards\ReadMe.cs" />
+    <Compile Include="ObjectOrientedModels\Cards\StandardCardDeck.cs" />
+    <Compile Include="ObjectOrientedModels\InvoiceManagement\InvoiceDesign.cs" />
+    <Compile Include="ObjectOrientedModels\jigsawPuzzle\Edge.cs" />
+    <Compile Include="ObjectOrientedModels\jigsawPuzzle\Piece.cs" />
+    <Compile Include="ObjectOrientedModels\jigsawPuzzle\Puzzle.cs" />
+    <Compile Include="ObjectOrientedModels\jigsawPuzzle\ReadMe.cs" />
+    <Compile Include="ObjectOrientedModels\OnlineBookReaderSystem\OnlineReaderSystem.cs" />
+    <Compile Include="ObjectOrientedModels\OnlineBookReaderSystem\Readme.cs" />
+    <Compile Include="ObjectOrientedModels\ParkingLot\ParkingLevel.cs" />
+    <Compile Include="ObjectOrientedModels\ParkingLot\ParkingLot.cs" />
+    <Compile Include="ObjectOrientedModels\ParkingLot\ParkingSpot.cs" />
+    <Compile Include="ObjectOrientedModels\ParkingLot\ReadMe.cs" />
+    <Compile Include="ObjectOrientedModels\ParkingLot\Vehicle.cs" />
+    <Compile Include="ObjectOrientedModels\ResturantReservation\ResturantReservation.cs" />
+    <Compile Include="ObjectOrientedModels\SnakeGame\SnakeGame.cs" />
+    <Compile Include="OODPage2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OODPage2.Designer.cs">
+      <DependentUpon>OODPage2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataStructures\Queue\PriorityQueue\PriorityQueue.cs" />
+    <Compile Include="DataStructures\Queue\Queue.cs" />
+    <Compile Include="DataStructures\Tree\BinaryTree\BinaryTree.cs" />
+    <Compile Include="LinkedListPage1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LinkedListPage1.Designer.cs">
+      <DependentUpon>LinkedListPage1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LinkedListPage2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LinkedListPage2.Designer.cs">
+      <DependentUpon>LinkedListPage2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataStructures\LinkedList\Node.cs" />
+    <Compile Include="DataStructures\LinkedList\NodeHelper.cs" />
+    <Compile Include="OODPage3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OODPage3.Designer.cs">
+      <DependentUpon>OODPage3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProblGlassdoorPage1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProblGlassdoorPage1.Designer.cs">
+      <DependentUpon>ProblGlassdoorPage1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RecursionAndDynamicProgrammingP1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RecursionAndDynamicProgrammingP1.Designer.cs">
+      <DependentUpon>RecursionAndDynamicProgrammingP1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataStructures\Array\SortHelper.cs" />
+    <Compile Include="RelatedProblemsArrayPage1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RelatedProblemsArrayPage1.Designer.cs">
+      <DependentUpon>RelatedProblemsArrayPage1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SortingAndSearch.Page1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SortingAndSearch.Page1.Designer.cs">
+      <DependentUpon>SortingAndSearch.Page1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataStructures\Stack\Stack.cs" />
+    <Compile Include="StackAndQueue.Page3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StackAndQueue.Page3.Designer.cs">
+      <DependentUpon>StackAndQueue.Page3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StackAndQueuesPage2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StackAndQueuesPage2.Designer.cs">
+      <DependentUpon>StackAndQueuesPage2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StacksAndQueuesPage1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StacksAndQueuesPage1.Designer.cs">
+      <DependentUpon>StacksAndQueuesPage1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataStructures\Tree\SuffixTree\SuffixTree.cs" />
+    <Compile Include="DataStructures\Stack\TowerWithStacks.cs" />
+    <Compile Include="DataStructures\Tree\TrieTree\Trie.cs" />
+    <Compile Include="DataStructures\Array\TwoDimensitionArrayStore.cs" />
+    <Compile Include="SpecailTreePage1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SpecailTreePage1.Designer.cs">
+      <DependentUpon>SpecailTreePage1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SpecialTreePage2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SpecialTreePage2.Designer.cs">
+      <DependentUpon>SpecialTreePage2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemDesign\CeaserCipher.cs" />
+    <Compile Include="SystemDesign\KarthicAtoi.cs" />
+    <Compile Include="SystemDesign\ShortenUrl.cs" />
+    <Compile Include="TechCompanies.Page2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TechCompanies.Page2.Designer.cs">
+      <DependentUpon>TechCompanies.Page2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TechCompaniesIQ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TechCompaniesIQ.Designer.cs">
+      <DependentUpon>TechCompaniesIQ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TechCompany.Page3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TechCompany.Page3.Designer.cs">
+      <DependentUpon>TechCompany.Page3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TechCompanyPage4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TechCompanyPage4.Designer.cs">
+      <DependentUpon>TechCompanyPage4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TechCompanyPage5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TechCompanyPage5.Designer.cs">
+      <DependentUpon>TechCompanyPage5.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AmazonQuestion1Page1.resx">
+      <DependentUpon>AmazonQuestion1Page1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ArrayAndString.p1.resx">
+      <DependentUpon>ArrayAndString.p1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ArrayAndString.P6.resx">
+      <DependentUpon>ArrayAndString.P6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ArrayAndStringP5.resx">
+      <DependentUpon>ArrayAndStringP5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ArrayAndStringsP4.resx">
+      <DependentUpon>ArrayAndStringsP4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BinaryTees.Page2.resx">
+      <DependentUpon>BinaryTees.Page2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BinaryTrees.Page1.resx">
+      <DependentUpon>BinaryTrees.Page1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BinaryTreesPage3.resx">
+      <DependentUpon>BinaryTreesPage3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BitManipulation.resx">
+      <DependentUpon>BitManipulation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BitManipulation1.resx">
+      <DependentUpon>BitManipulation1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CandidateQuesPage1.resx">
+      <DependentUpon>CandidateQuesPage1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CandidateQuestionsPage2.resx">
+      <DependentUpon>CandidateQuestionsPage2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GL6ModerateProbPage1.resx">
+      <DependentUpon>GL6ModerateProbPage1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GlassdoorPage2.resx">
+      <DependentUpon>GlassdoorPage2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GlassdoorPage3.resx">
+      <DependentUpon>GlassdoorPage3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GLHardProblems_Page1.resx">
+      <DependentUpon>GLHardProblems_Page1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GLHardProblems_Page2.resx">
+      <DependentUpon>GLHardProblems_Page2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GLModerateProblems_Page1.resx">
+      <DependentUpon>GLModerateProblems_Page1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GLModerateProblems_Page2.resx">
+      <DependentUpon>GLModerateProblems_Page2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GLModerateProblems_Page3.resx">
+      <DependentUpon>GLModerateProblems_Page3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImplementationProblems.resx">
+      <DependentUpon>ImplementationProblems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LinkedListPage3.resx">
+      <DependentUpon>LinkedListPage3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogicalProblems.resx">
+      <DependentUpon>LogicalProblems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Heap.P1.resx">
+      <DependentUpon>Heap.P1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeapPage2.resx">
+      <DependentUpon>HeapPage2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Index.resx">
+      <DependentUpon>Index.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ArrayAndString.p2.resx">
+      <DependentUpon>ArrayAndString.p2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ArrayAndStringP3.resx">
+      <DependentUpon>ArrayAndStringP3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LinkedListPage1.resx">
+      <DependentUpon>LinkedListPage1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LinkedListPage2.resx">
+      <DependentUpon>LinkedListPage2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIParentForm.resx">
+      <DependentUpon>MDIParentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MicrosoftIQ.resx">
+      <DependentUpon>MicrosoftIQ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MicrosoftIQ2.resx">
+      <DependentUpon>MicrosoftIQ2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MicrosoftOTSPage1.resx">
+      <DependentUpon>MicrosoftOTSPage1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MicrosoftOTSPage2.resx">
+      <DependentUpon>MicrosoftOTSPage2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MicrosoftOTSPage3.resx">
+      <DependentUpon>MicrosoftOTSPage3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NGU2017QuestionsPage1.resx">
+      <DependentUpon>NGU2017QuestionsPage1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ObjectOrientedDesign.resx">
+      <DependentUpon>ObjectOrientedDesign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OODPage2.resx">
+      <DependentUpon>OODPage2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OODPage3.resx">
+      <DependentUpon>OODPage3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProblGlassdoorPage1.resx">
+      <DependentUpon>ProblGlassdoorPage1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RecursionAndDynamicProgrammingP1.resx">
+      <DependentUpon>RecursionAndDynamicProgrammingP1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RelatedProblemsArrayPage1.resx">
+      <DependentUpon>RelatedProblemsArrayPage1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SortingAndSearch.Page1.resx">
+      <DependentUpon>SortingAndSearch.Page1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StackAndQueue.Page3.resx">
+      <DependentUpon>StackAndQueue.Page3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StackAndQueuesPage2.resx">
+      <DependentUpon>StackAndQueuesPage2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StacksAndQueuesPage1.resx">
+      <DependentUpon>StacksAndQueuesPage1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SpecailTreePage1.resx">
+      <DependentUpon>SpecailTreePage1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SpecialTreePage2.resx">
+      <DependentUpon>SpecialTreePage2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TechCompanies.Page2.resx">
+      <DependentUpon>TechCompanies.Page2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TechCompaniesIQ.resx">
+      <DependentUpon>TechCompaniesIQ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TechCompany.Page3.resx">
+      <DependentUpon>TechCompany.Page3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TechCompanyPage4.resx">
+      <DependentUpon>TechCompanyPage4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TechCompanyPage5.resx">
+      <DependentUpon>TechCompanyPage5.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BST.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BST1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\graph.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2013-07-11_162143.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\permutation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cards.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parkinglot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BitOperators.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minheap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maxheap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maze.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maze2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maze3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Questions\AlgorithmQuestions.docx" />
+    <None Include="Resources\Questions\DesignQuestions.docx" />
+    <None Include="Resources\Questions\AnswersToDesignQuestions.docx" />
+    <None Include="Resources\tic-tac.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\linkedlistintersection.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\linkedlistintersection1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LCSubstring.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seq.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\XMLFiles\s.xml" />
+    <Content Include="SystemDesign\DesignPatterns.txt" />
+    <None Include="Resources\never-give-up-facebook-cover.jpg" />
+    <None Include="Resources\never-give-up-facebook-cover-timeline-banner-for-fb.jpg" />
+    <None Include="Resources\look_up_get_up_and_never_give_up.jpg" />
+    <None Include="Resources\NGUlogo.jpg" />
+    <None Include="Resources\square.png" />
+    <None Include="Resources\square1.png" />
+    <None Include="Resources\binarytrees6.jpg" />
+    <None Include="Resources\2.jpg" />
+    <None Include="Resources\1.jpg" />
+    <None Include="Resources\4.jpg" />
+    <None Include="Resources\54.jpg" />
+    <None Include="Resources\300.jpg" />
+    <None Include="Resources\400.jpg" />
+    <Content Include="Resources\Cheatsheets\AlgorithmsToRemeber.txt" />
+    <None Include="Resources\graph.jpg" />
+    <None Include="Resources\graph1.jpg" />
+    <Content Include="Resources\Cheatsheets\Formulas.txt" />
+    <None Include="Resources\histogram.jpg" />
+    <Content Include="Resources\InterviewPrepartaion\PlanTracker.txt" />
+    <Content Include="Resources\InterviewPrepartaion\PreparationTips.txt" />
+    <None Include="Resources\never-give-up-facebook-cover-timeline-banner-for-fb1.jpg" />
+    <None Include="Resources\never-give-up-facebook-cover-timeline-banner-for-fb_resize.jpg" />
+    <Content Include="Resources\Questions\Google.txt" />
+    <Content Include="Resources\Questions\QuestionsFaced.txt" />
+    <Content Include="Resources\Questions\SuckersToRevisit.txt" />
+    <Content Include="Resources\Questions\ToPrepare.txt" />
+    <Content Include="Resources\ScalabilityAndMemory\TextFile1.txt" />
+    <None Include="Resources\treeborder.png" />
+    <None Include="Resources\tree.png" />
+    <Content Include="Resources\XMLFiles\sample.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\ImplementionProblems\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,40 @@
+﻿Interview Details – Round 1:
+
+1. Explain and Write KnapSack Algo with Memorization
+2. Given a undirected graph, clone it. Now if the undirected graph has the neighbors with the nodes as same data - how do you make sure you create the exact same branches and also how do you make sure you don't run into loops for the exact node. He gave a empty directed graph and asked me write code after that.
+3. Given two Btrees. these trees "may" have right and left branches swapped. Now compare it.
+
+Round 2:
+1. Given a N different open and close braces in a string "( { [ } ] )". How do you check whether the string has matching braces.
+2. Given a unsorted array. Create a balanced BTREE
+3. Print a tree like (Parent ( leftchild (leftchild, rightchild), rightchild(leftchild,rightchild) ) )
+
+Round 3:
+Given a kernal code in "0"th machine. How soon you can replicate the kernal across N machines. Now if the machines has upload and download bandwidth constraints, how can you impove the copy time.
+
+Round 4:
+1. Design Short URL.
+2. Given a List with duplicate Strings, how do you remove duplicate Strings
+
+Round 5:
+1. How do you design a Maze and what kind of data structures you use for Maze.
+2. Now print the shorted path from start to end point.
+
+
+Merge sorted, non-overlapping list of intervals with another interval [(1,3), (5,10), (12,30)] + (9,31) = [(1,3), (5,31)]   View Answer
+Implement a system so that the billionth search query at Google each day wins a car
+
+
+
+ given K files and N machines, N is much larger than K. given function long sum(int fileID,int machineID) which use particular machine calculate the sum of file. Question:write function which calculate the sum of all files 
+
+
+ Phone Chat with Aari
+
+ 1) Design Youtube suggestion on the web
+ 2) Design Watch next after watching the video
+ 3) Design phone google search (or) how do you categorize the search (or) build search engine ..optimization
+ 4) career cup and glassdoor 
+
+ https://www.linkedin.com/profile/view?id=3215949&goback=
+ 

@@ -1,0 +1,142 @@
+﻿N-Ary Tree
+
+1) Total Number of Nodes in N-Ary Tree = (n ^(h +1) -1)/ n -1 where n is 3 for 3-ary tree and h is height of the tree
+       // No. of node = k^(h+1) -1 / (k -1)
+        //This is the same formula for binary tree as well..for binary tree k = 2 so the formula becomes
+        //2^(h+1) -1
+2) Height of root is 0...
+3) int childindex = k * parentindex + 1 + childnumber
+          where k = 3 for 3-ary tree and childnumber is the number from (0 to 2) for 3-ary tree
+4)  Parentindex  = (childindex - 1) / k
+5) Total Number leaf nodes  l = (n + 1) / 3 where n is no if nodes
+
+Binary Tree
+
+1) Total Number of node in Binary Tree =  2^(h+1) -1
+2) Total Number leaf nodes  l = (n + 1) / 2 This means that a perfect binary tree with l leaves has n = 2l - 1 nodes.
+3) Leftchildindex = 2i+1  Rightchild = 2i+2
+4) Parent Index = (childindex -1) /2
+
+Segementation Tree
+
+1) Height of the segement tree is h = log n  so, int h = (int)Math.Ceiling(Math.Log(n, 2));
+2) Maximum size of segment tree is defined as  2 * (2 power log n) - 1 so it is  int max_size = 2 * (int)Math.Pow(2, h) - 1; /
+3) Left child index =  2 * parentindex + 1
+4) Right child index = 2 * parentindex + 2
+4) Parent Index = (childindex -1)/2
+
+Triangle
+All sides should be greater than 0
+Sum of any two sides should be greater than third side
+
+Matrix
+Given square matrix N*N
+  //For a given square of size n, there are (n - sz + 1) squares of length sz
+  //that is for n = 5 there will be only 1 square..for n = 4 there will be two on first row..two on second row.. 
+  //count is no of possible square for the given size on a particualr row or column..count is same for row and column bcoz  square row and col length is same
+   int count = matrix.GetLength(0) - size + 1;  //For a given square of size n, there are (n - sz + 1) squares of length sz
+  //that is for n = 5 there will be only 1 square..for n = 4 there will be two on first row..two on second row.. 
+  //count is no of possible square for the given size on a particualr row or column..count is same for row and column bcoz  square row and col length is same
+        
+    int count = matrix.GetLength(0) - size + 1; Where count is no of possible subsquares in the given size
+
+
+Find Kth Smallest Element in two sorted array
+ //This gives an estimate of the new half-way point assuming an equidistribution of values between the known points.
+1) int i = (int)((double)((k - 1) * aLength / (aLength + bLength)));
+2) i+ j  = k -1, so j = k-1 -i
+
+Bit Manipulation:
+
+1)   //This is an important function if the a value is positive it returns 1
+    // and if the a value is negative it returns 0
+    public int Sign(int a)
+    {
+      //Note here x is bit multiplication 
+      int value = (a >> 31) & 0x1;
+      return flip(value);
+    }
+
+2) Number divisible by 8:   The last bits of the number will be 0, then the number is divisible by 8
+3) All Power of 2:  ((number & (number - 1)) == 0)
+4)  XOR Swap
+           /xor rule..To switch two value follow the the three operations
+            //1) x1 = x1^x2 a
+            //2)X2 = x2^x1 
+            //3)x1 = x1^x2
+5) Find duplicates using xor
+     // 1) XOR all the array elements, let the result of XOR be X1.
+    //2) XOR all numbers from 1 to n, let XOR be X2.
+    //3) XOR of X1 and X2 gives the missing number.
+6)  XORing a 4-bit number with 1011 would flip the first, third, and fourth bits of the number. 
+    XORing the result again with 1011 would flip those bits back to their original value. So, if we XOR a number two times with some number nothing will change.  
+        //eg: if we do this 3 xor 11 and then with the result xor 11, we will get 3 back.
+        //Order and multiple times doesn't matter
+
+
+Mathematics
+
+Note: visit glassdoor problem no 2
+To find orientation from three points
+
+        // To find orientation of ordered triplet (p, q, r).
+		int val = (q.y - p.y) * (r.x - q.x) - (q.x - p.x) * (r.y - q.y);
+        // The function returns following values
+        // 0 --> p, q and r are colinear
+        // 1 --> Clockwise
+        // 2 --> Counterclockwise
+
+Given three colinear points p, q, r, the function checks if point q lies on line segment 'pr'
+       if (q.x <= Math.Max(p.x, r.x) && q.x >= Math.Max(p.x, r.x) &&
+           q.y <= Math.Max(p.y, r.y) && q.y >= Math.Max(p.y, r.y))
+            {
+                return true;
+            }
+
+Find two lines intersect based on orientation
+            // Find the four orientations needed for general and  special cases
+
+            int o1 = orientation(p1, q1, p2);
+            int o2 = orientation(p1, q1, q2);
+            int o3 = orientation(p2, q2, p1);
+            int o4 = orientation(p2, q2, q1);
+
+
+            // General case
+            if (o1 != o2 && o3 != o4)
+                return true;
+
+            // Special Cases
+            // p1, q1 and p2 are colinear and p2 lies on segment p1q1
+            if (o1 == 0 && onSegment(p1, p2, q1)) return true;
+
+            // p1, q1 and p2 are colinear and q2 lies on segment p1q1
+            if (o2 == 0 && onSegment(p1, q2, q1)) return true;
+
+            // p2, q2 and p1 are colinear and p1 lies on segment p2q2
+            if (o3 == 0 && onSegment(p2, p1, q2)) return true;
+
+            // p2, q2 and q1 are colinear and q1 lies on segment p2q2
+            if (o4 == 0 && onSegment(p2, q1, q2)) return true;
+
+            return false; // Doesn't fall in any of the above cases
+	
+Find two lines intersect based on Slope and y-Intercept
+
+Slope = (y2 -y1) / (x2 - x1);
+ y = mx + b where m is the slope, b is y-intercept and (x,y) is any point on the line
+
+Two lines will intersect on two condition
+conditon 1: (both line are parallen and overlapping) if the lines are parallel (slope are equal), they intersect only if they have the same y-interecept and start 2 in on line 1
+Condtion 2 : If two line intersect, then they will have same point of intersection and the point of intesection will be with both lines coordinates
+
+If two line intersect then y1 = m1x1 + b1 is equal to y2= m2x2 + b2 and both x and y co-ordinate of two lines will be equal
+so Intersection point x = (b2 -b1)/ (m1- m2) and y = mx + b..
+
+
+Missing Number
+
+ Sum of Number from 1 to n is  ( n * (n+1))/2
+ Sum of Square of Number from 1 to n is  ( n * (n+1) (2n+1))/6
+
+

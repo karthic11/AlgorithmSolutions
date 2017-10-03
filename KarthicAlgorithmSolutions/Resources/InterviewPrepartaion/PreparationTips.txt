@@ -1,0 +1,54 @@
+﻿
+Make a plan and take action
+
+Sketch the plan for entire month:
+
+Keep Goals and do your level best to reach the goals
+
+1) New Problems
+         Document the questions and solve the problem from naive to best solution
+2) Revision:
+        a) First Revision: Revise the entire chapter with paper and pen 
+		b) Second Revision: In white board. Get used to whiteboard
+
+
+Goal for Microsoft  on July 15th...
+
+6/12/2015 to 6/21/2015  Revise all the old problems. Do paper and white board coding..
+					    Hard Problems chapter   (done)
+						Moderate chapter   (done)
+						Candidate Posting questions chapter (done)
+						Special Tree chapter                               need to do white board
+						Sorting   (done)
+						Bit Manipulataion (done)                           but revise again 
+						Array (done)
+						Binary Tree (done)
+						Linked List (Done)
+						Stacks and Queue (Done)
+						Dynamic Programming  (Done)                        need to rever parenthesis valid function
+						Logical Problems  (Done)
+						Microsoft OTS Questions
+						OOPS Concepts and Design Questions
+
+6/22/2015 to 7/2/2015   Glassdoor Problems for Ms and Gayle 5th edition problems..White Board
+7/2/2015 to 7/12/2015   Gayle 5th edition new book problems
+7/12/2015 to 7/16/2015  Revision
+
+New Plan
+
+7/1 to  7/5   Glassdoor and Gayle 5th edition
+7/6 to 7/10   Glassdoor new problem and Implemention questions
+7/10 to 7/15  Revision Start with MS Interview question chapter
+
+
+Bit manipulation
+Candidation posting questions
+
+Formula list
+Dp problems
+Gladssdoor revision list
+Revision the file suckerstorevisit.txt
+Related Problems
+Implement cache in gayle book
+
+

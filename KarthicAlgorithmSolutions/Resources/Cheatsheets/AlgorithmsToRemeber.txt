@@ -1,0 +1,86 @@
+﻿
+
+Array   
+  1) Array of integers (both positive and negative). Find the contiguous sequence or sub array with the largest sum. Return the sum 
+        - Kadane's Algorithm 0(n) hint: we use this same for 2d matrix max sum too :)
+  2) Array of integers (both positive and negative). Find the subset with the largest sum. Return the sum 
+         - Subset has two option (include and exclude). cal max of that  0(2^n)
+		 Note: To find subset use recursion with iteration to get the list of strings
+ 3) Given an array. Find Subset that has given sum..
+         We can use recursion with bool as return value (no iteration required) 0(n2)
+		 We can use dp with excluding and including concept 0(n*m)    
+		 In both case i still need to work on printing the subset that formed the sum
+   Follow-up: Find pairs of integers in an array that sum to a value  - Sort and use two pointer or use hashtabe with difference call
+ 4) Given an unsorted array arr[] of distinct integers, construct another array countSmaller[] such that countSmaller[i] contains count of smaller elements on right side of each element arr[i] in array.
+         We can user AVL Tree with extra size property n log n
+		 Naive will be 0(n2)
+ 5) Find the kth Smallest of two sorted array in o(log n)
+        using invariant (i + j = k – 1) and i as (int)((double)m / (m+n) * (k-1)).
+
+ 6) Binary Tree Formula  (Segmentation Tree)
+        parent index = (i -1)/ 2 where i is the index of child
+		Left child index = 2*i + 1 and Right child index = 2*i + 2 where i is the index of parent
+ 7) k-ary tree
+        parent index = (i -1)/k where i is the index of child and k is max childs
+		child index =  k * i + 1 + c where c is the child number index (oth, 1st, 2nd) and i is the parent index and k is max child
+ 8) FisherYatesShuffleAlgorithm  - Very simple but confusing with other Rando algorithm..Right to left, random.Next(0, i + 1) and Swap
+ 9) Count number of 2
+   //Logic
+             //Here we calculate the number of 2 as digit basis not in range..that is number of possible 2 in each digit of the string from  string.length -1 to 0
+             //eg  x = 61523   ..x[d] = 1 where d = 3   ..x[0] = 3, x[1] = 2 
+             // Consider the digit 1 at 3rd index of the string 61523 
+             //This digit has three possible ways :
+             //It is fun to make this calculation but see the Gayle book pg 466 for the calculation..but here is the formula for each case
+             //1) Digit lesser than 2         Round Down to the greater power of 10^(d+1) of the given number that is 60000 and then divide by 10 = 6000
+             //2) Digit greater than 2        Round Up to the greatest power of 10^(d + 1) of the given number that is 7000 and then divide by 10 = 7000
+             //3) Digit equal to 2          Round Down to the greater power of 10^(d+1) of the given number that is 60000 and then add (number / 10d) (to the right of that index) + 1 = 6000 + 523 + 1 = 6524
+
+10) Find the ith smallest/largest element in the given array
+           Selection Rank Algorthm  Rank Algorthm o(n) - pivot and divide and conquer
+
+11) In a matrix number of possible iteration in a row or colm   
+          int count = Matrix.length - size + 1;   //this is for square ..for rectange do for both row and col size
+12) Suffix Tree is used most commonly for the below
+   Pattern Searching, 
+   Finding the longest repeated substring  
+   Finding the longest common substring  ..Suffix Tree and DP
+   Finding the longest palindrome in a string
+
+
+Dynamic Programming
+
+1) Find the longest common substring for the given two susbtrings
+      Hint: LCSuffix[i, j] = LCSuffix[i - 1, j - 1] + 1;
+      max = Math.Max(max, LCSuffix[i, j]);
+2) Find the longest common subsequence of two strings   
+     Match LCS[i, j] = LCS[i - 1, j - 1] + 1;  Non Match  LCS[i, j] = Math.Max(LCS[i - 1, j], LCS[i, j - 1]);
+	 Backtrack via bride method..remember kingdom of 0,1,2 etc
+3) Coin Denomination Problem
+                    //here we have two choice for coins
+                    //includin the coin for the denom value
+                    int way1 = (i - denom[j] >= 0) ? table[i - denom[j], j] : 0;
+                    //excluding this coin for denom value
+                     // If there are no coins and n is greater than 0, then no solution exist
+                    int way2 = (j > 0) ? table[i, j - 1] : 0;
+                    table[i, j] = way1 + way2;
+4) Knapsack Problem
+             //check the item can fit into the bag of capacity j
+                    //int[] weight is index based and we are iterating via length based
+                    else if (weight[i - 1] <= j)
+                    {
+                        //it can fit into the bag
+                        //excluding this item
+                        int value1 = maxarray[i - 1, j];
+                        //including this item
+                        int value2 = values[i-1] + maxarray[i - 1, (j - weight[i - 1])];
+                        maxarray[i, j] = Math.Max(value1, value2);
+                    }
+5) Find sub matrix square with maximum sum
+     hint: computedmatrix[i, j] = computedmatrix[i - 1, j] + computedmatrix[i, j - 1] - computedmatrix[i - 1, j - 1] + orignal[i, j];
+6) Given a set of non-negative integers, and a value sum, determine if there is a subset of the given set with sum equal to given sum.
+      /* else, check if sum can be obtained by any of the following
+               (a) including the last element
+               (b) excluding the last element   */
+            return isSubsetSum(set, n - 1, sum) || isSubsetSum(set, n - 1, sum - set[n - 1]);
+
+     
